@@ -21,18 +21,19 @@
       box-shadow: 0 0 15px rgba(0,0,0,0.1);
     }
   </style>
+  <!-- ✅ 自動跳轉的後備方案 -->
+  <meta http-equiv="refresh" content="2; url=https://liff.line.me/2008288844-W4wgdVww">
 </head>
 <body>
   <div class="card">
     <h3>✅ 加入會員申請已送出！</h3>
     <p>系統將自動返回 LINE 官方帳號…</p >
+    <p><a href=" " style="color:#06c;text-decoration:none;">👉 若未自動跳轉，請點此返回 LINE</a ></p >
   </div>
 
   <script>
-    // ❗️請把這裡改成妳自己的 LIFF ID
+    // 主動跳轉（支援 Safari / Chrome）
     const liffUrl = "https://liff.line.me/2008288844-W4wgdVww";
-
-    // 2 秒後自動跳轉回 LINE
     setTimeout(() => {
       window.location.href = liffUrl;
     }, 2000);
