@@ -2,28 +2,40 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>感謝您！正在返回 LINE</title>
-  <meta http-equiv="refresh" content="2;url=https://liff.line.me/2008288844-W4wgdVww"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>正在返回 LINE 中...</title>
   <style>
-    body{font-family:-apple-system,BlinkMacSystemFont,"Noto Sans TC","Microsoft JhengHei",sans-serif;
-          display:flex;align-items:center;justify-content:center;height:100vh;margin:0;background:#fff;}
-    .card{max-width:420px;padding:28px;border-radius:12px;box-shadow:0 8px 30px rgba(0,0,0,0.08);text-align:center;}
-    h1{margin:0 0 8px;font-size:20px;color:#0f1720;}
-    p{margin:0 0 12px;color:#444;}
-    a.button{display:inline-block;padding:10px 18px;border-radius:8px;text-decoration:none;
-             border:1px solid #0ea5a4;color:#0ea5a4;font-weight:600;}
+    body {
+      font-family: "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #fff;
+    }
+    .card {
+      text-align: center;
+      border: 1px solid #eee;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
   </style>
 </head>
 <body>
   <div class="card">
-    <h1>🎉 感謝您完成申請！</h1>
-    <p>系統將自動返回 LINE 官方帳號，若未跳轉請按下面按鈕。</p>
-    <a class="button" href=" ">返回 LINE 官方帳號</a >  </div>
+    <h3>✅ 加入會員申請已送出！</h3>
+    <p>系統將自動返回 LINE 官方帳號…</p >
+  </div>
+
+  <script>
+    // ❗️請把這裡改成妳自己的 LIFF ID
+    const liffUrl = "https://liff.line.me/2008288844-W4wgdVww";
+
+    // 2 秒後自動跳轉回 LINE
+    setTimeout(() => {
+      window.location.href = liffUrl;
+    }, 2000);
+  </script>
 </body>
-
 </html>
-
-
-
-
